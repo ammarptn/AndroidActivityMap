@@ -22,9 +22,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
+// create by Ammarptn July 2020
 
 public class ActivityMapGenerator {
     public static void main(String[] args) {
+
 
 
         ArrayList<String> activityAndFragmentFileList = new ArrayList<>();
@@ -137,8 +139,14 @@ public class ActivityMapGenerator {
 
     void writeNodeRelationToFile(String nodeName, int dept, FileWriter myWriter, ArrayList<FileNode> treeList, ArrayList<String> activityAndFragmentFileList) throws IOException {
 
+        boolean isInfinityLoopDetected = false;
 
         for (FileNode fileNode : treeList) {
+
+            if (isInfinityLoopDetected) {
+                System.out.println("Infinity Loop of Activity/Fragment relation Detected");
+                System.exit(0);
+            }
 
             if (fileNode.getName().equals(nodeName)) {
 
@@ -157,6 +165,10 @@ public class ActivityMapGenerator {
 
 
                     }
+                } else {
+                    isInfinityLoopDetected = true;
+
+
                 }
             }
         }
