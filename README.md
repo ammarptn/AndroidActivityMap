@@ -5,7 +5,6 @@
 
 AndroidActivityMap is a program to generate the graphical map of activity/fragment in the android project.
 
-AndroidActivityMap is a executable jar file to help you generate the Activity/fragment map of your Android project
   - Increase navigation ability of your Android project
   - provide better vision of your application flow
   - Help you plan UI testing more efficacy
