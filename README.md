@@ -3,6 +3,8 @@
 # AndroidActivityMap
 ![AndroidActivityMap](https://github.com/ammarptn/AndroidActivityMap/blob/master/image/Screenshot%202020-07-11%20at%2011.58.42%20PM.png?raw=true)
 
+AndroidActivityMap is a program to generate the graphical map of activity/fragment in the android project.
+
 AndroidActivityMap is a executable jar file to help you generate the Activity/fragment map of your Android project
   - Increase navigation ability of your Android project
   - provide better vision of your application flow
